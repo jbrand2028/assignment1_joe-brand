@@ -1,0 +1,80 @@
+/* ---------- General / body ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  background-color: #fff8ee;
+  color: #3b2a1e;
+}
+
+/* ---------- Sticky header ---------- */
+header {
+  position: sticky;      /* or fixed; sticky is easier */
+  top: 0;
+  z-index: 1000;
+  background-color: #8b5a2b;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* ---------- Navigation ---------- */
+nav ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #f5c16c;
+  color: #3b2a1e;
+}
+
+/* ---------- Main content, centered with flexbox ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centers horizontally */
+  justify-content: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ---------- Footer (matches header) ---------- */
+footer {
+  background-color: #8b5a2b;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
